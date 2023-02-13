@@ -1,0 +1,227 @@
+
+*{
+    margin:0;
+    padding:0;
+     box-sizing:border-box;
+}
+body{
+        width:100%;
+        height:200vh;     
+}
+/*heading*/
+.container-fluid{
+     width:100%;
+     height:10vh;
+    position: fixed;
+    top:0px;
+    background-color: black;
+}
+.top{
+    margin-top: 3vh;
+    cursor: pointer;
+    color: white;
+}
+.fas:hover , .fas:active{
+   background-color: blueviolet;
+   padding:5px;
+}
+.name{
+    position: relative;
+    left:2%;
+    font-size: larger;
+}
+/*aside*/
+.sidenav{
+width:200px;
+height:100vh;
+position:fixed;
+top:10%;
+color: green;
+background: linear-gradient( white 70%, green);
+}
+.sidenav img{ 
+    position: relative;
+    top:10px;
+}
+.sidenav .circle{
+    margin-top: 3%;
+
+    text-align:center
+}
+.img-2{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+}
+.b{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.b2{
+    font-size: 15px;
+    font-weight:bold;
+}
+.sec-3{
+    background-color: whitesmoke;
+    width:100%;
+    height:100vh;
+}
+nav{
+    margin-top: 40px;
+}
+.li{
+ list-style-type: none;
+ background-color: rgb(111, 161, 109);
+ text-align: center;
+ padding: 10px 0;
+ border:1px solid green;
+
+}
+.li a{
+    color:black;
+    text-decoration: none;
+}
+.li:hover{
+    background-color: rgb(233, 233, 236);
+}
+.fa{
+    color:black;
+}
+/*main*/
+.container{
+    position: absolute;
+    right: 5%;
+    width: 100%;
+    height:100vh;
+    display: inline;
+    background-image:url('./img/walling-e_MdMMKrgdY-unsplash.jpg');
+    background-size:cover; 
+}
+
+.left{
+    width:40%;
+    height:60vh;
+    position:absolute;
+    top: 15vh;
+    left:10%;
+    border-radius:20px;
+    border: 5px solid;
+    border-top-color: yellow;
+    border-bottom-color: purple;
+    border-left-color: green;
+    border-right-color: white;
+    padding: 10px;
+    transition: border-color 5s , height 5s;
+    overflow:hidden;
+    animation-name: dillion;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    }
+#demo{
+    font-size: 30px;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.right{
+    width: 40%;
+    height:400px;
+    position:absolute;
+    top:2vh;
+    right:0px;
+}
+.profile{
+    position: absolute;
+    top:100%;
+    height:100vh;
+    justify-content:space-between;
+}
+.contain{
+   display: flex;
+}
+.about{
+    width:50%;
+    background-color:blanchedalmond;
+}
+.no{
+    text-align: center;
+}
+.card-img-top{
+ border-bottom-left-radius: 55px;
+ border-top-right-radius: 55px;
+}
+.badge{
+    background-color: RED;
+}
+.bottom{
+ position:relative;
+ color:white;
+ top:-20px;
+ text-align: center;
+}
+.skill-mf span {
+  color: #4e4e4e;
+}
+
+.skill-mf .progress {
+  background-color: #cde1f8;
+  margin: 0.5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: 0.7rem;
+  width:48vw;
+
+}
+
+.skill-mf .progress .progress-bar {
+  height: 0.7rem;
+  background-color: #0078ff;
+}
+.skill-mf{
+color:red;
+}
+@media screen and (max-width:500px){
+    .right{
+        display: none;
+    }
+    .left{
+        width: 80%;
+    }
+    .mg{
+        display:block;
+    }
+    .contain{
+        display:inline;
+    }
+    .about{
+        width:100%;
+    }
+
+}
+@media screen and (min-width:1000px){
+    .card-img-top{
+        max-width: 50%;
+    }
+    .badge-p{
+        width:50%;
+    }
+ .skill-mf .progress{
+        width:20vw;
+    }
+
+}
+
+@keyframes dillion{
+    from{
+          border-top-color: yellow;
+    border-bottom-color: purple;
+    border-left-color: green;
+    border-right-color: white;
+    }
+    to{
+          border-top-color:blue;
+        border-left-color:red;
+        border-right-color:indigo;
+        border-bottom-color:burlywood;
+    }
+}
